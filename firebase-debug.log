@@ -1,0 +1,97 @@
+[debug] [2024-04-18T18:02:07.256Z] ----------------------------------------------------------------------
+[debug] [2024-04-18T18:02:07.261Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-04-18T18:02:07.262Z] CLI Version:   13.7.3
+[debug] [2024-04-18T18:02:07.262Z] Platform:      linux
+[debug] [2024-04-18T18:02:07.263Z] Node Version:  v20.9.0
+[debug] [2024-04-18T18:02:07.263Z] Time:          Thu Apr 18 2024 23:32:07 GMT+0530 (India Standard Time)
+[debug] [2024-04-18T18:02:07.263Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-18T18:02:07.354Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-18T18:02:07.355Z] > authorizing via signed-in user (remotikal@gmail.com)
+[debug] [2024-04-18T18:02:07.355Z] [iam] checking project aayushsharma-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-04-18T18:02:07.358Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/aayushsharma-portfolio:testIamPermissions [none]
+[debug] [2024-04-18T18:02:07.358Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/aayushsharma-portfolio:testIamPermissions x-goog-quota-user=projects/aayushsharma-portfolio
+[debug] [2024-04-18T18:02:07.358Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/aayushsharma-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-18T18:02:08.427Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/aayushsharma-portfolio:testIamPermissions 200
+[debug] [2024-04-18T18:02:08.428Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/aayushsharma-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-18T18:02:08.429Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/aayushsharma-portfolio [none]
+[debug] [2024-04-18T18:02:09.453Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/aayushsharma-portfolio 200
+[debug] [2024-04-18T18:02:09.453Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/aayushsharma-portfolio {"projectId":"aayushsharma-portfolio","projectNumber":"147894351211","displayName":"aayushsharma-portfolio","name":"projects/aayushsharma-portfolio","resources":{"hostingSite":"aayushsharma-portfolio"},"state":"ACTIVE","etag":"1_f5ca99b9-be16-44e4-8c4e-76776be50173"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-04-18T18:02:18.153Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/aayushsharma-portfolio/sites/aayushsharma-portfolio [none]
+[debug] [2024-04-18T18:02:19.896Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/aayushsharma-portfolio/sites/aayushsharma-portfolio 200
+[debug] [2024-04-18T18:02:19.896Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/aayushsharma-portfolio/sites/aayushsharma-portfolio {"name":"projects/aayushsharma-portfolio/sites/aayushsharma-portfolio","defaultUrl":"https://aayushsharma-portfolio.web.app","appId":"1:147894351211:web:2b6b131c90d128ea93482e","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.1
+
+[info] 
+
+[info]    Linting and checking validity of types ...
+
+[info]    Creating an optimized production build ...
+
+[info] > [PWA] Compile server
+
+[info] > [PWA] Compile server
+
+[info] > [PWA] Compile client (static)
+
+[info] > [PWA] Auto register service worker with: /home/remotikal/remotikal-dev/aayushsharma-t3-/portfolio/node_modules/next-pwa/register.js
+
+[info] > [PWA] Service worker: /home/remotikal/remotikal-dev/aayushsharma-t3-/portfolio/public/service-worker.js
+> [PWA]   url: /service-worker.js
+> [PWA]   scope: /
+
+[info]  ✓ Compiled successfully
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/6) ...
+
+[info]    Generating static pages (1/6) 
+
+[info]    Generating static pages (2/6) 
+
+[info]    Generating static pages (4/6) 
+
+[info]  ✓ Generating static pages (6/6)
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (pages)                             Size     First Load JS
+┌ ○ / (1396 ms)                           593 kB          675 kB
+├   └ css/9021ea1e0784d42f.css            1.49 kB
+├   /_app                                 0 B            82.2 kB
+└ ○ /404                                  182 B          82.4 kB
++ First Load JS shared by all             88 kB
+  ├ chunks/framework-2c16ac744b6cdea6.js  45.2 kB
+  ├ chunks/main-30463d812525b41e.js       34.8 kB
+  └ other shared chunks (total)           8.01 kB
+
+[info] 
+○  (Static)  prerendered as static content
+
+
+[debug] [2024-04-18T18:03:39.359Z] Error: Invalid environment variables
+    at onValidationError (file:///home/remotikal/remotikal-dev/aayushsharma-t3-/portfolio/node_modules/@t3-oss/env-core/dist/index.js:29:15)
+    at createEnv (file:///home/remotikal/remotikal-dev/aayushsharma-t3-/portfolio/node_modules/@t3-oss/env-core/dist/index.js:35:16)
+    at createEnv (file:///home/remotikal/remotikal-dev/aayushsharma-t3-/portfolio/node_modules/@t3-oss/env-nextjs/dist/index.js:12:12)
+    at file:///home/remotikal/remotikal-dev/aayushsharma-t3-/portfolio/src/env.js:4:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:217:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:316:24)
+    at async file:///home/remotikal/remotikal-dev/aayushsharma-t3-/portfolio/next.config.js:5:1
+[error] 
+[error] Error: An unexpected error has occurred.
